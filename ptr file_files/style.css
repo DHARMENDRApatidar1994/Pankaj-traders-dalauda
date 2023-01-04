@@ -1,0 +1,590 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+}
+#page1{
+    width: 100vw;
+    height: 100%;
+}
+#page1 nav{
+    width: 100vw;
+    height: 10%;
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    padding: 0vw 2vw;
+
+}
+nav .nav-right{
+    width: 50vw;
+    display: flex;
+    justify-content: space-evenly;
+    /* align-items: center; */
+    cursor: pointer;
+}
+nav .nav-right:hover{
+    margin-top: 5vmax;
+    
+}
+nav  .call{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: black;
+    transform: translateX(-1vmax);
+    display: none;
+
+    
+}
+nav .nav-right h4:hover .call{
+    display: initial;
+}
+.container{
+    width: 100vw;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    padding: 5vw;
+    background-image: url(./19x38.webp);
+    transition: 5s;
+    animation-name: animate;
+    animation-direction: alternate-reverse;
+    animation-duration: 50s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    animation-play-state: running;
+    animation-timing-function: ease-in-out;
+    
+}
+.container h1{
+    font-size: 4vw;
+    color: rgba(6, 51, 109, 0.9);
+    font-family: Arial, Helvetica, sans-serif;
+}
+.container h2{
+    font-size: 3vw;
+    color: rgb(9, 97, 16);
+    font-family: Arial, Helvetica, sans-serif;
+}
+.container li{
+    font-size: 1.9vw;
+    color: black;
+    font-weight: 800;
+    font-family: Arial, Helvetica, sans-serif;
+}
+@keyframes animate{
+    0%{background-image: url(bed\ maker.webp);}
+    10%{background-image: url(drip.webp);}
+    20%{background-image: url(dutron\ kanaflex.webp);}
+    30%{background-image: url(imclined\ model.webp);}
+    40%{background-image: url(kasta\ all.jpg);}
+    45%{background-image: url(/19x38.webp);}
+    50%{background-image: url(kasta\ tank.jpg);}
+    60%{background-image: url(mini\ sprinkler.jpg);}
+    70%{background-image: url(portable\ fitting.jpg);}
+    80%{background-image: url(rain\ pipe\ fitting.webp);}
+    90%{background-image: url(pvc\ pipe.jpg);}
+    100%{background-image: url(spare.webp);}
+    
+}
+.page0{
+    width: 100%;
+    height: 100%;
+    background-image: url(green.avif);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-evenly; */
+}
+.page0 .top{
+    width: 100%;
+    height: 60%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.page0 .image1{
+    width: 20%;
+    height: 90%;
+    cursor: pointer;
+    /* background-color: red; */
+}
+.image1 img{
+    width: 100%;
+    height: 80%;
+    
+}
+.page0 .matter{
+    width: 30%;
+    height: 90%;
+    color: rgb(248, 246, 244);
+    /* background-color: red; */
+}
+.matter span{
+    color: rgb(19, 17, 17);
+    font-size: 2vmax;
+}
+.page0 .image2 {
+    width: 20%;
+    height: 90%;
+    cursor: pointer;
+    /* background-color: red; */
+}
+.image2 img{
+    width: 100%;
+    height: 80%;
+    
+}
+.page0 .bottom{
+    width: 100%;
+    height: 40%;
+    /* background-color: red; */
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.bottom .company {
+    width: 100%;
+    height: 90%;
+    /* background-color: aqua; */
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.company img{
+    width: 15%;
+    height: 90%;
+    background-color: white;
+    cursor: pointer;
+}
+.page2{
+    width: 100%;
+    height: 100%;
+    /* background-color: red; */
+    background-image: url(green.avif);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.page2 .implement{
+    width: 100%;
+    height: 50%;
+    /* background-color: blue; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+
+}
+.page2 .implement h1{
+    
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+}
+.implement .image{
+    width: 100%;
+    height: 70%;
+    display: flex;
+    justify-content: space-evenly;
+}
+ .name{
+    width: 100%;
+    height: 10%;
+    display: flex;
+    justify-content: space-evenly;
+}
+.implement img{
+    width: 18%;
+    height: 100%;
+    border-radius: 2vmax;
+    cursor: pointer;
+    /* background-color: pink; */
+}
+.page2 .video {
+    width: 100%;
+    height: 50%;
+    /* background-color: brown; */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+} 
+ .name button{
+    width: 18%;
+    padding: 0vmax 1vmax;
+    font-size: 1.5vmax;
+    text-align: center;
+    border-radius: 2vmax;
+    background-color: black;
+    color: white;
+    font-weight: 900;
+    cursor: pointer;
+}
+.name button:hover{
+    background-color: white;
+    color: black;
+}
+.video iframe{
+    width: 27%;
+    height: 90%;
+    border-radius: 2vmax;
+    cursor: pointer;
+}
+
+.page3{
+    width: 100%;
+    height: 100%;
+    /* background-color: red; */
+    background-image: url(green.avif);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.page3 .pipe{
+    width: 100%;
+    height: 50%;
+    /* background-color: blue; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+
+}
+.page3 .pipe h1{
+    
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+}
+.pipe .image{
+    width: 100%;
+    height: 70%;
+    display: flex;
+    justify-content: space-evenly;
+}
+.pipe img{
+    width: 18%;
+    height: 100%;
+    background-color: pink;
+    border-radius: 2vmax;
+    cursor: pointer;
+}
+.page3 .subsidy{
+    display: flex;
+    justify-content: space-around;
+}
+.subsidy .info{
+    width: 55%;
+    margin-left: 2vmax;
+
+}
+.subsidy .info li{
+    font-size: 2vmax;
+    font-weight: 900;
+
+}
+.subsidy .subvideo{
+    width: 40%;
+    text-align: center;
+    margin-top: 3vmax;
+    color: rgb(6, 3, 36);
+
+}
+
+.page4{
+    width: 100%;
+    height: 100%;
+    /* background-color: red; */
+    background-image: url(green.avif);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.page4 .fitting{
+    width: 100%;
+    height: 50%;
+    /* background-color: blue; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+
+}
+.page4 h1{
+    
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+}
+.fitting .image{
+    width: 100%;
+    height: 70%;
+    display: flex;
+    justify-content: space-evenly;
+}
+.fitting img{
+    width: 18%;
+    height: 100%;
+    background-color: white;
+    border-radius: 2vmax;
+    cursor: pointer;
+}
+.page4 .page4-2{
+    width: 100%;
+    height: 48%;
+    /* background-color: green; */
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.page4 .rotate{
+    width: 18%;
+    height: 80%;
+    background-color: gray;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    animation: move 15s linear  infinite;
+    border-radius: 2vmax;
+    cursor: pointer;
+}
+@keyframes move {
+    0%{background-image: url(p1.jpeg);}
+     20%{ background-image: url(p7.jpeg);} 
+    40%{ background-image: url(p2.jpeg);}
+    60%{background-image: url(p9.jpeg); }
+    80%{ background-image: url(p10.jpeg);}
+    100%{ background-image: url(p4.jpeg); }
+    
+}
+.page4 .rotate1{
+    width: 18%;
+    height: 80%;
+    background-color: gray;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    animation: move1 15s linear  infinite;
+    border-radius: 2vmax;
+    cursor: pointer;
+}
+@keyframes move1 {
+    0%{background-image: url(p12.jpeg);}
+     20%{ background-image: url(p13.jpeg);} 
+    40%{ background-image: url(p14.jpeg);}
+    60%{background-image: url(p15.jpeg); }
+    80%{ background-image: url(p16.jpeg);}
+    100%{ background-image: url(p17.jpeg); }
+    
+}
+.page4 .rotate2{
+    width: 18%;
+    height: 80%;
+    background-color: gray;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    animation: move2 15s linear  infinite;
+    border-radius: 2vmax;
+    cursor: pointer;
+}
+@keyframes move2 {
+    0%{background-image: url(p3.jpeg);}
+     20%{ background-image: url(p5.jpeg);} 
+    40%{ background-image: url(p6.jpeg);}
+    60%{background-image: url(p8.jpeg); }
+    80%{ background-image: url(p11.jpeg);}
+    100%{ background-image: url(p18.jpeg); }
+    
+}.page4 .rotate3{
+    width: 18%;
+    height: 80%;
+    background-color: gray;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    animation: move3 15s linear  infinite;
+    border-radius: 2vmax;
+    cursor: pointer;
+}
+@keyframes move3 {
+    0%{background-image: url(p19.jpeg);}
+     20%{ background-image: url(p20.jpeg);} 
+    40%{ background-image: url(p21.jpeg);}
+    60%{background-image: url(p22.jpeg); }
+    80%{ background-image: url(p23.jpeg);}
+    100%{ background-image: url(p24.jpeg); }
+    
+}
+.page4 .rotate4{
+    width: 18%;
+    height: 80%;
+    background-color: gray;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    animation: move4 15s linear  infinite;
+    border-radius: 2vmax;
+    cursor: pointer;
+}
+@keyframes move4 {
+    0%{background-image: url(p25.jpeg);}
+     20%{ background-image: url(p26.jpeg);} 
+    40%{ background-image: url(p27.jpeg);}
+    60%{background-image: url(p28.jpeg); }
+    80%{ background-image: url(p29.jpeg);}
+    100%{ background-image: url(p30.jpeg); }
+    
+}
+
+.page5{
+    width: 100%;
+    height: 100%;
+    /* background-color: rgb(78, 75, 75); */
+    background-image: url(green.avif);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.page5 .Sprinkler{
+    width: 100%;
+    height: 50%;
+    /* background-color: blue; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+
+}
+.page5 .Sprinkler h1{
+    
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+}
+.Sprinkler .image{
+    width: 100%;
+    height: 70%;
+    display: flex;
+    justify-content: space-evenly;
+}
+.Sprinkler img{
+    width: 18%;
+    height: 100%;
+    background-color: pink;
+    border-radius: 2vmax;
+    cursor: pointer;
+}
+.page6{
+    width: 100%;
+    height: 100%;
+    /* background-color: red; */
+    background-image: url(green.avif);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.page6 .Other{
+    width: 100%;
+    height: 50%;
+    /* background-color: blue; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+
+}
+.page6 .Other h1{
+    
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+}
+.Other .image{
+    width: 100%;
+    height: 70%;
+    display: flex;
+    justify-content: space-evenly;
+}
+.Other img{
+    width: 18%;
+    height: 100%;
+    background-color: pink;
+    border-radius: 2vmax;
+    cursor: pointer;
+}
+.page6 .video {
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.page6 .video iframe{
+    width: 50%;
+    height: 90%;
+    border-radius: 2vmax;
+    cursor: pointer;
+}
+.page6 .video .enquiry{
+    width: 30%;
+    height: 90%;
+    background-color:rgb(46, 44, 44);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    color: white;
+    border-radius: 1.5vmax;
+}
+.enquiry h4{
+    font-size: 1.5vmax;
+}
+.enquiry button{
+    font-size: 1.5vmax;
+    margin-left: 5vmax;
+    background-color: black;
+    color: white;
+    border-radius: 1.5vmax;
+    cursor: pointer;
+}
+.page7 {
+    width: 100%;
+    height: 50%;
+    background-color: gray;
+    display: flex;
+    justify-content: space-evenly;
+}
+.page7 .call{
+    width: 40%;
+}
+.page7 .contact{
+    width: 40%;
+}
+.page7 i{
+    font-size: 3vmax;
+    /* background-color: black; */
+    color:rgb(19, 243, 243);
+    cursor: pointer;
+}
+.page7 h1{
+    color: white;
+}
+.page7 h2{
+    color: red;
+    cursor: pointer;
+}
+.page7 a{
+    color: red;
+    font-size: 2vmax;
+    cursor: pointer;
+}
+
+
+
