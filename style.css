@@ -686,7 +686,7 @@ nav .nav-right{
     }
     .name button{
         width: 32%;
-        transform: translateY(-22vmax);
+        transform: translateY(-21vmax);
         margin-left: 0.2vmax;
         }
         .down{
@@ -697,7 +697,7 @@ nav .nav-right{
     .down button{
     
         
-        margin-top: 15vmax;
+        margin-top: 14vmax;
         
     }
     .pipe .image{
